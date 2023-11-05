@@ -221,13 +221,52 @@
     //  a.Return median of two sorted arrays of the same size using anonymous function:
 
 
-    let sort1 = [1,2,3,4,5,6,7];
-    let sort2 = [1,2,3,4,5,6,7,8];
+    
+
+    // let midval =  function(arr1,arr2){
+
+    //  let arr3=[...arr1,...arr2];
+    //  arr3.sort((a,b)=>{
+  
+
+    // })
+
+    // }
+    // console.log(midval())
 
 
-    function sortarr(sot){
+
+    // h. Rotate an array by k times using anonymous function:
+
+
+    
+
+    
 
 
 
-    }
-    sortarr()
+
+
+
+
+
+
+
+   // h. Rotate an array by k times using IIFE function:
+
+
+
+    let arrr=[1,2,3,4,5];
+    let k = 3;
+
+    (function(arrr,k){
+         for(var i=0;i<k.length;i++){
+          arrr.push(arrr[i])
+
+         }
+         for(var i=0;i<k.length;i++){
+      arrr.shift()
+
+         }
+   console.log(arrr);
+    })("rotate arry" +" "+ arrr,k);

@@ -19,7 +19,7 @@ console.log(rn);
 
 
 
-// b.Convert all the strings to title caps in a string array:
+  // b.Convert all the strings to title caps in a string array:
 
 
 
@@ -55,7 +55,7 @@ console.log(def(str));
 
 
 
-// c.Sum of all numbers in an array
+  // c.Sum of all numbers in an array
 
 
 const sumal = [23,45,34,21,78];
@@ -90,7 +90,24 @@ console.log(ghi(a));
 // d.Return all the prime numbers in an array:
 
 
+let prm = (primenum)=>{
 
+  {
+    if (primenum <= 1) {
+      return false;
+    } else {
+      for (let i = 2; i < primenum; i++) {
+        if (primenum % i == 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+  }
+
+}
+console.log("prime or not");
+console.log(prm([5]))
 
 
 
