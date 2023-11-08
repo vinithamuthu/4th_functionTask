@@ -236,6 +236,73 @@
 
 
 
+
+    const arry1 = [1,2,3,4,6,12,14];
+    const arry2 = [5,7,8,9,10];
+
+    function findMidVal(arry1,arry2){
+
+      let arry3 = [...arry1,...arry2];     // concat array
+      
+      arry3.sort((a,b)=>a-b);
+
+      let n = arry3.length; 
+
+      if(n%2===0){
+    //  (arrayname[length/2]+arrayname[length/2-1])/2
+         
+    return ((arry3[n/2]+arry3[n/2-1])/2 )
+
+      }
+
+     else{
+    // arrayname[length/2]
+  
+    return (arry3[Math.floor(n/2)])
+     
+     }
+
+    }
+
+    console.log(findMidVal(arry1,arry2));
+
+
+
+// 2nd methods:
+
+const arry12 = [1,2,3,4,6,12,14];
+    const arry22 = [5,7,8,9,10];
+
+    function findMidVal(arry12,arry22){
+
+      let arry32 = [...arry12,...arry22];     // concat array
+      
+      arry32.sort((a2,b2)=>a2-b2);
+
+      let n2 = arry32.length; 
+
+
+      return n2%2===0 ? ((arry32[n2/2]+arry32[n2/2-1])/2 ) : (arry32[Math.floor(n2/2)])
+
+
+    }
+
+
+    console.log(findMidVal(arry12,arry22));
+
+
+
+    // 3rd method:
+
+
+  // let n2 = Math.floor(arry32.length/2); 
+
+
+  // return arry32.length%2===0 ? ((arry32[n2]+arry32[n2-1])/2 ) : (arry32[n2])
+
+
+
+
     // h. Rotate an array by k times using anonymous function:
 
 
@@ -270,3 +337,21 @@
          }
    console.log(arrr);
     })("rotate arry" +" "+ arrr,k);
+
+
+
+    // 2nd method:
+
+
+    let arrr1=[1,2,3,4,5];
+    let k1 = 3;
+
+    (function(arrr1,k1){
+         for(var i=0;i<k1.length;i++){
+          arrr1.push( arrr1.shift())
+
+         }
+         
+      
+   console.log(arrr1);
+    })("rotate arry" +" "+ arrr1,k1);
